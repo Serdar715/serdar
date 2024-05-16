@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giriş Yap ve Kayıt Ol</title>
+<style>
+  body { font-family: Arial, sans-serif; background-color: #f7f7f7; }
+  .container { max-width: 300px; margin: auto; padding: 20px; background: #fff; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+  input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 3px; box-sizing: border-box; }
+  button { width: 100%; padding: 10px; background-color: #5cb85c; color: white; border: none; border-radius: 3px; cursor: pointer; }
+  button:hover { background-color: #45a049; }
+  .switch { text-align: center; margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Giriş Yap</h2>
+  <form>
+    <input type="text" placeholder="Kullanıcı adı" required>
+    <input type="password" placeholder="Şifre" required>
+    <button type="submit">Giriş Yap</button>
+    <div class="switch">veya <a href="#">Kayıt Ol</a></div>
+  </form>
+</div>
+
+<div class="container" style="margin-top: 20px;">
+  <h2>Kayıt Ol</h2>
+  <form>
+    <input type="text" placeholder="Kullanıcı adı" required>
+    <input type="email" placeholder="E-posta" required>
+    <input type="password" placeholder="Şifre" required>
+    <button type="submit">Kayıt Ol</button>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Gece Modlu Web Sitesi</title>
+<link rel="stylesheet" href="styles.css">
+<script>
+    // Gece modu için temayı değiştir
+    function temaDegistir() {
+        var body = document.body;
+        body.classList.toggle("gece-modu");
+    }
+</script>
+<style>
+   
+    
+    /* Gece modu stil özellikleri */
+    .gece-modu {
+        
+        background-color: #333;
+        color: #79dded;
+    }
+    /* Navbar stil özellikleri */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 23px;
+        background-color: #636996;
+        box-shadow: 0 2px 5px rgba(9, 0, 0, 0.1);
+    }
+    .navbar .logo {
+        margin-left: 20px;
+        font-size: 54px;
+        background-image: url(anasayfa_resim/Adsız-2024-05-04-1347.png); /* Resmin yolunu buraya ekleyin */
+        
+            background-size:100%  ;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display:inline-block;
+            
+    }
+    .navbar .menu {
+        margin-right: 25px;
+    }
+
+    
+
+    .navbar .menu a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+    /* Giriş yap ve kaydol linkleri */
+    .login-links {
+        margin-right: 25px;
+    }
+    .login-links a {
+        text-decoration: none;
+        color: #333;
+    }
+    /* Kategoriler kutusu */
+    .category-box {
+        margin: 25px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /* Giriş yap ve kaydol kutucukları */
+    .login-box {
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .login-box:hover {
+        opacity: 0.8;
+    }
+    .login-box.kaydol {
+        background-color: #00f; /* Mavi */
+    }
+    .login-box.giris-yap {
+        background-color: #f00; /* Kırmızı */
+    }
+    /* Resimli video linki ve açıklama metni */
+    .video-card {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .video-card img {
+        width: 100px;
+        height: auto;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+    .video-description {
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .video-description small {
+        display: none;
+        font-size: 12px;
+    }
+    .video-description:hover small {
+        display: block;
+    }
+    
+    
+    .YAZILIM{
+        background-image: url(anasayfa_resim/Yazılım.jpeg); /* Resmin yolunu buraya ekleyin */
+        width:33%;
+        height: 200px;
+            background-size:100%  ;
+            background-position: center;
+            color: rgb(244, 244, 240);
+            text-align: center;
+            display:inline-block;
+
+    }
+
+    .KARİYER_GELİŞİMİ{
+        background-image: url(anasayfa_resim/kariyer_gelişimi.jpeg) ;/* Resmin yolunu buraya ekleyin */
+        width:33%;
+        height: 200px;
+            background-size:100% ;
+            background-position: center;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            display:inline-block;
+    }
+    .KİŞİSEL_GELİŞİM{
+        
+        background-image: url(anasayfa_resim/Kişisel_Gelişim.jpeg); /* Resmin yolunu buraya ekleyin */
+        width:33%;
+        height: 200px;
+            background-size:100% ;
+            background-position: center;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            display:inline-block;
+    }
+
+
+    
+
+    #topBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(201, 76, 54);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+#topBtn:hover {
+  background-color: #555;
+}
+
+body{
+    background-image: url(anasayfa_resim/web_ana\ _sayfa.png);
+}
+.search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px;
+            width: 300px;
+        }
+        
+        .search-input {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 5px;
+        }
+        
+        .search-icon {
+            font-size: 24px; /* İkonun boyutunu ayarla */
+            color: #000; 
+        }
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <a href="#" class="logo" onclick="window.location.href='Anasayfa.html'">Logo</a>
+        <div class="menu2" onclick="window.location.href='Anasayfa.html'"> <h3>ANASAYFA</h3></div>
+        <div class="menu2" onclick="window.location.href='#'"> <h3>YAZILIM</h3></div>
+        <div class="menu2" onclick="window.location.href='#'"> <h3>KARİYER GELİŞİM</h3></div>
+        <div class="menu2" onclick="window.location.href='kişisel_gelişim.html'"> <h3>KİŞİSEL GELİŞİM</h3></div>
+            
+
+    <div class="login-links">
+        <div class="login-box kaydol" onclick="window.location.href='kaydol.html'">Kaydol</div>
+        <div class="login-box giris-yap" onclick="window.location.href='giris.html'">Giriş Yap</div>
+    </div>
+
+    <button
+      
+        onclick="temaDegistir()">
+        <i class="fa-solid fa-circle-half-stroke" style="font-size: 30px;"></i>
+
+
+</nav>
+
+<!-- İçerik Alanı -->
+<div class="container">
+    
+    <!-- Kategoriler kutusu -->
+    <div class="category-box">
+        
+        <div class="YAZILIM" onclick="window.location.href='kategori.html'">  
+            <h1>YAZILIM</h1>
+                   
+        </div>
+        <div class="KARİYER_GELİŞİMİ" onclick="window.location.href='kategori.html'">
+            <h1>KARİYER GELİŞİM</h1>
+        </div>
+        <div class="KİŞİSEL_GELİŞİM" onclick="window.location.href='kişisel_gelişim.html'">
+            <h1 >KİŞİSEL GELİŞİM</h1>
+    </div>
+
+    
+</div>
+
+
+
+<button 
+
+onclick="topFunction()" id="topBtn" title="Sayfanın başına git">
+<i class="fa-solid fa-rocket" style="font-size: 50;"></i>
+</button>
+
+<script>
+    
+// Kullanıcı sayfada belirli bir miktar kaydırdığında butonu göster
+window.onscroll = function() {scrollFunction()};
+
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topBtn").style.display = "block";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+
+// Kullanıcı butona tıkladığında sayfanın en üstüne çık
+function topFunction() {
+    
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

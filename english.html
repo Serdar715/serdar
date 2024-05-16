@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gece Modlu Web Sitesi</title>
+<link rel="stylesheet" href="styles.css">
+<script>
+  <i class="fa-solid fa-circle-half-stroke"></i>
+    // Gece modu için temayı değiştir
+    function temaDegistir() {
+        var body = document.body;
+        body.classList.toggle("gece-modu");
+    }
+</script>
+<style>
+    /* Gece modu stil özellikleri */
+    .gece-modu {
+        background-color: #333;
+        color: #fff;
+    }
+    /* Navbar stil özellikleri */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .navbar2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        
+    }
+
+    .navbar .logo {
+        margin-left: 20px;
+        font-size: 54px;
+        background-image: url(anasayfa_resim/Adsız-2024-05-04-1347.png); /* Resmin yolunu buraya ekleyin */
+        
+            background-size:100%  ;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display:inline-block;
+            
+    }
+    .navbar .menu {
+        margin-right: 20px;
+    }
+    .navbar .menu a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+    /* Giriş yap ve kaydol linkleri */
+    .login-links {
+        margin-right: 20px;
+    }
+    .login-links a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    /* Giriş yap ve kaydol kutucukları */
+    .login-box {
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .login-box:hover {
+        opacity: 0.8;
+    }
+    .login-box.kaydol {
+        background-color: #00f; /* Mavi */
+    }
+    .login-box.giris-yap {
+        background-color: #f00; /* Kırmızı */
+    }
+
+    .category-box {
+        margin: 5px;
+        padding: 5px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+    } 
+    
+    .önerilen{
+        
+        /* background-image: url(Kişsel_gelişim_resim/diller1.png); /* Resmin yolunu buraya ekleyin */
+        width:16%;
+        height: 200px;
+            background-size:100%  ;
+            background-position: center;
+            color:#333;
+            text-align: center;
+            display:inline-block;
+
+    }
+
+    #kişisel_gelişim_text {
+        text-align: center;
+    }
+
+    
+
+    #topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#topBtn:hover {
+  background-color: #555;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <a href="#" class="logo" onclick="window.location.href='Anasayfa.html'">Logo</a>
+        <div class="menu2" onclick="window.location.href='Anasayfa.html'"> <h3>ANASAYFA</h3></div>
+        <div class="menu2" onclick="window.location.href='#'"> <h3>YAZILIM</h3></div>
+        <div class="menu2" onclick="window.location.href='#'"> <h3>KARİYER GELİŞİM</h3></div>
+        <div class="menu2" onclick="window.location.href='kişisel_gelişim.html'"> <h3>KİŞİSEL GELİŞİM</h3></div>
+            
+
+    <div class="login-links">
+        <div class="login-box kaydol" onclick="window.location.href='kaydol.html'">Kaydol</div>
+        <div class="login-box giris-yap" onclick="window.location.href='muhammed_kayıt.html'">Giriş Yap</div>
+    </div>
+    <button onclick="temaDegistir()">Gece Modu</button>
+</nav>
+
+<nav class="navbar2">
+      <div class="kategori1" onclick="window.location.href='1diller.html'"> <h2><strong>DİLLER</strong></h2></div>
+      <div class="kategori1" onclick="window.location.href='1teknoloji.html'"><h2>TEKNOLOJİ</h2></div>
+      <div class="kategori1" onclick="window.location.href='1psikoloji.html'"> <h2>PSİKOLOJİ</h2></div>
+      <div class="kategori1" onclick="window.location.href='1hobiler.html'"> <h2>HOBİLER</h2></div>
+      <div class="kategori1" onclick="window.location.href='1etkili_iletişim.html'"> <h2>ETKİLİ İLETİŞİM</h2></div>
+</nav>
+
+<!-- İçerik Alanı -->
+<div class="category-box">
+    <h3 style="text-align: center;">İNGİLİZCE DİLİ İÇİN ÖNERİLEN YOUTUBE KANALLARI</h3>
+<div class="önerilen">
+    <a href="https://www.youtube.com/c/%C3%87ilemAkar" target="_blank">
+        <img src="english/çilem_akar.jpg" alt="ÇİLEM AKAR YOUTUBE">
+      </a>
+      <h5>ÇİLEM AKAR</h5>
+    </div>
+    <div class="önerilen">
+        <a href="https://www.youtube.com/c/%C3%87ilemAkar" target="_blank">
+            <img src="english/meet_yasin_altun.jpg" alt="Meet Yasin Altun YOUTUBE">
+          </a>
+          <h5>MEET YASİN ALTUN</h5>
+        </div>
+        <div class="önerilen">
+            <a href="https://www.youtube.com/c/%C3%87ilemAkar" target="_blank">
+                <img src="english/özer_kiraz.jpg" alt="İngilizce Konu Anlatımı - Özer Kiraz YOUTUBE">
+              </a>
+              <h6> İNGİLZCE KONU ANLATIMI -ÖZER KİRAZ  </h5>
+            </div>
+            <div class="önerilen">
+                <a href="https://www.youtube.com/c/%C3%87ilemAkar" target="_blank">
+                    <img src="english/evde_ingilzce.jpg" alt="Evde İngilizce YOUTUBE">
+                  </a>
+                  <h5>EVDE İNGİLİZCE</h5>
+                </div>
+                <div class="önerilen">
+                    <a href="https://www.youtube.com/c/%C3%87ilemAkar" target="_blank">
+                        <img src="english/çilem_akar.jpg" alt="ÇİLEM AKAR YOUTUBE">
+                      </a>
+                      <h5>ÇİLEM AKAR</h5>
+                    </div>           
+                    <div class="önerilen">
+                        <a href="https://www.youtube.com/c/%C3%87ilemAkar" target="_blank">
+                            <img src="english/çilem_akar.jpg" alt="ÇİLEM AKAR YOUTUBE">
+                          </a>
+                          <h5>ÇİLEM AKAR</h5>
+                        </div>
+</div>
+<p></p>
+<hr>
+<p></p>
+
+<div class="category-box">
+    <h3 style="text-align: center;">İNGİLİZCE DİLİ İÇİN ÖNERİLEN LİSTELER</h3>
+<div class="önerilen">
+    <a href="https://www.youtube.com/playlist?list=PLxX2m2Np79VfE8qgLtUZHwCF0VyuFH8QI" target="_blank">
+        <img src="english/haluk_tatar.jpg" alt="HALUK TATAR YOUTUBE">
+      </a>
+      <h5>HALUK TATAR</h5>
+    </div>
+    <div class="önerilen">
+        <a href="https://www.youtube.com/playlist?list=PLaFgx6R3JNMaXIfWNfgVIiRgm83Qtjzip" target="_blank">
+            <img src="english/FK_LANGUAGE.jpg" alt="FK LANGUAGE YOUTUBE">
+          </a>
+          <h5>FK LANGUAGE</h5>
+        </div>
+        <div class="önerilen">
+            <a href="https://www.youtube.com/playlist?list=PLUHDteB5yhRhesyBmKHv7B6RI8QBEbl2u" target="_blank">
+                <img src="english/Evren_Okuşoğlu.jpg" alt="Evren_Okuşoğlu YOUTUBE" height="176" width="176">
+              </a>
+              <h5>EVREN OKUŞOĞLU</h5>
+            </div>
+            <div class="önerilen">
+                <a href="https://www.youtube.com/playlist?list=PLlLi1hQPF6u2MV_Hs7p0N--_XdiA6qu6U" target="_blank">
+                    <img src="english/Aksen_Kahraman.jpg"  alt="İngilizce Dersler Aksen Kahraman YOUTUBE" height="176" width="176">
+                  </a>
+                  <h5>AKSEN KAHRAMAN</h5>
+                </div>
+                <div class="önerilen">
+                    <a href="https://www.youtube.com/playlist?list=PLM3nPYtAvZKBjO6NdsLgB8W0pHcf8Jp_E" target="_blank">
+                        <img src="english/Sem_Dil_Kursu.jpg" alt="SEM DİL KURSU YOUTUBE" height="176" width="176">
+                      </a>
+                      <h5>SEM DİL KURSU</h5>
+                    </div>           
+                    <div class="önerilen">
+                        <a href="https://www.youtube.com/c/%C3%87ilemAkar" target="_blank">
+                            <img src="english/çilem_akar.jpg" alt="ÇİLEM AKAR YOUTUBE">
+                          </a>
+                          <h5>ÇİLEM AKAR</h5>
+                        </div>
+</div>
+
+<p></p>
+<hr>
+<p></p>
+
+<div class="category-box">
+    <h3 style="text-align: center;">İNGİLİZCE DİLİ İÇİN ÖNERİLEN LİSTELER</h3>
+<div class="önerilen">
+    <a href="https://www.youtube.com/playlist?list=PLxX2m2Np79VfE8qgLtUZHwCF0VyuFH8QI" target="_blank">
+        <img src="english/haluk_tatar.jpg" alt="HALUK TATAR YOUTUBE">
+      </a>
+      <h5>HALUK TATAR</h5>
+    </div>
+    <div class="önerilen">
+        <a href="https://www.youtube.com/playlist?list=PLaFgx6R3JNMaXIfWNfgVIiRgm83Qtjzip" target="_blank">
+            <img src="english/FK_LANGUAGE.jpg" alt="FK LANGUAGE YOUTUBE">
+          </a>
+          <h5>FK LANGUAGE</h5>
+        </div>
+        <div class="önerilen">
+            <a href="https://www.youtube.com/playlist?list=PLUHDteB5yhRhesyBmKHv7B6RI8QBEbl2u" target="_blank">
+                <img src="english/Evren_Okuşoğlu.jpg" alt="Evren_Okuşoğlu YOUTUBE" height="176" width="176">
+              </a>
+              <h5>EVREN OKUŞOĞLU</h5>
+            </div>
+            <div class="önerilen">
+                <a href="https://www.youtube.com/playlist?list=PLlLi1hQPF6u2MV_Hs7p0N--_XdiA6qu6U" target="_blank">
+                    <img src="english/Aksen_Kahraman.jpg"  alt="İngilizce Dersler Aksen Kahraman YOUTUBE" height="176" width="176">
+                  </a>
+                  <h5>AKSEN KAHRAMAN</h5>
+                </div>
+                <div class="önerilen">
+                    <a href="https://www.youtube.com/playlist?list=PLM3nPYtAvZKBjO6NdsLgB8W0pHcf8Jp_E" target="_blank">
+                        <img src="english/Sem_Dil_Kursu.jpg" alt="SEM DİL KURSU YOUTUBE" height="176" width="176">
+                      </a>
+                      <h5>SEM DİL KURSU</h5>
+                    </div>           
+                    <div class="önerilen">
+                        <a href="https://www.youtube.com/c/%C3%87ilemAkar" target="_blank">
+                            <img src="english/çilem_akar.jpg" alt="ÇİLEM AKAR YOUTUBE">
+                          </a>
+                          <h5>ÇİLEM AKAR</h5>
+                        </div>
+</div>
+
+
+<p></p>
+<hr>
+<p></p>
+
+<div class="category-box">
+    <h3 style="text-align: center;">İNGİLİZCE DİLİ İÇİN ÖNERİLEN LİSTELER</h3>
+<div class="önerilen">
+    <a href="https://www.youtube.com/playlist?list=PLxX2m2Np79VfE8qgLtUZHwCF0VyuFH8QI" target="_blank">
+        <img src="english/haluk_tatar.jpg" alt="HALUK TATAR YOUTUBE">
+      </a>
+      <h5>HALUK TATAR</h5>
+    </div>
+    <div class="önerilen">
+        <a href="https://www.youtube.com/playlist?list=PLaFgx6R3JNMaXIfWNfgVIiRgm83Qtjzip" target="_blank">
+            <img src="english/FK_LANGUAGE.jpg" alt="FK LANGUAGE YOUTUBE">
+          </a>
+          <h5>FK LANGUAGE</h5>
+        </div>
+        <div class="önerilen">
+            <a href="https://www.youtube.com/playlist?list=PLUHDteB5yhRhesyBmKHv7B6RI8QBEbl2u" target="_blank">
+                <img src="english/Evren_Okuşoğlu.jpg" alt="Evren_Okuşoğlu YOUTUBE" height="176" width="176">
+              </a>
+              <h5>EVREN OKUŞOĞLU</h5>
+            </div>
+            <div class="önerilen">
+                <a href="https://www.youtube.com/playlist?list=PLlLi1hQPF6u2MV_Hs7p0N--_XdiA6qu6U" target="_blank">
+                    <img src="english/Aksen_Kahraman.jpg"  alt="İngilizce Dersler Aksen Kahraman YOUTUBE" height="176" width="176">
+                  </a>
+                  <h5>AKSEN KAHRAMAN</h5>
+                </div>
+                <div class="önerilen">
+                    <a href="https://www.youtube.com/playlist?list=PLM3nPYtAvZKBjO6NdsLgB8W0pHcf8Jp_E" target="_blank">
+                        <img src="english/Sem_Dil_Kursu.jpg" alt="SEM DİL KURSU YOUTUBE" height="176" width="176">
+                      </a>
+                      <h5>SEM DİL KURSU</h5>
+                    </div>           
+                    <div class="önerilen">
+                        <a href="https://www.youtube.com/c/%C3%87ilemAkar" target="_blank">
+                            <img src="english/çilem_akar.jpg" alt="ÇİLEM AKAR YOUTUBE">
+                          </a>
+                          <h5>ÇİLEM AKAR</h5>
+                        </div>
+</div>
+
+
+<button onclick="topFunction()" id="topBtn" title="Sayfanın başına git">Başa Dön</button>
+
+<script>
+// Kullanıcı sayfada belirli bir miktar kaydırdığında butonu göster
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topBtn").style.display = "block";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+
+// Kullanıcı butona tıkladığında sayfanın en üstüne çık
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gece Modlu Web Sitesi</title>
+<link rel="stylesheet" href="styles.css">
+<script>
+    // Gece modu için temayı değiştir
+    function temaDegistir() {
+        var body = document.body;
+        body.classList.toggle("gece-modu");
+    }
+</script>
+<style>
+    /* Gece modu stil özellikleri */
+    .gece-modu {
+        background-color: #333;
+        color: #fff;
+    }
+    /* Navbar stil özellikleri */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .navbar .logo {
+        margin-left: 20px;
+        font-size: 54px;
+        background-image: url(anasayfa_resim/Adsız-2024-05-04-1347.png); /* Resmin yolunu buraya ekleyin */
+        
+            background-size:100%  ;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display:inline-block;
+            
+    }
+    .navbar .menu {
+        margin-right: 20px;
+    }
+    .navbar .menu a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+    /* Giriş yap ve kaydol linkleri */
+    .login-links {
+        margin-right: 20px;
+    }
+    .login-links a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    /* Giriş yap ve kaydol kutucukları */
+    .login-box {
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .login-box:hover {
+        opacity: 0.8;
+    }
+    .login-box.kaydol {
+        background-color: #00f; /* Mavi */
+    }
+    .login-box.giris-yap {
+        background-color: #f00; /* Kırmızı */
+    }
+
+    .category-box {
+        margin: 10px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+    } 
+    
+    .İNGİLİZCE{
+        
+        background-image: url(kişisel_gelişim_resim/); /* Resmin yolunu buraya ekleyin */
+        width:33%;
+        height: 200px;
+            background-size:100%  ;
+            background-position: center;
+            color:#333;
+            text-align: center;
+            display:inline-block;
+            
+
+    }
+
+    .ALMANCA{
+        background-image: url(Kişsel_gelişim_resim/deutsch.png); /* Resmin yolunu buraya ekleyin */
+        width:33%;
+        height: 200px;
+            background-size:100%  ;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display:inline-block;
+
+    }
+
+    .FRANSIZCA{
+        background-image: url(Kişsel_gelişim_resim/francais.jpeg); /* Resmin yolunu buraya ekleyin */
+        width:33%;
+        height: 200px;
+            background-size:100% ;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display:inline-block;
+    }
+    .İTALYANCA{
+        
+        background-image: url(Kişsel_gelişim_resim/italiano.jpeg); /* Resmin yolunu buraya ekleyin */
+        width:33%;
+        height: 200px;
+            background-size:100% ;
+            background-position: center;
+            color:#333;
+            text-align: center;
+            display:inline-block;
+    }
+    .RUSÇA{
+        
+        background-image: url(Kişsel_gelişim_resim/rusça.jpeg); /* Resmin yolunu buraya ekleyin */
+        width:33%;
+        height: 200px;
+            background-size:100% ;
+            background-position: center;
+            color:#333;
+            text-align: center;
+            display:inline-block;
+    }
+
+    .ARAPÇA{
+        
+        background-image: url(Kişsel_gelişim_resim/arapça.jpeg); /* Resmin yolunu buraya ekleyin */
+        width:33%;
+        height: 200px;
+            background-size:100% ;
+            background-position: center;
+            color:#333;
+            text-align: center;
+            display:inline-block;
+    }
+
+    #kişisel_gelişim_text {
+        text-align: center;
+    }
+    #topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#topBtn:hover {
+  background-color: #555;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <a href="#" class="logo" onclick="window.location.href='Anasayfa.html'">Logo</a>
+        <div class="menu2" onclick="window.location.href='Anasayfa.html'"> <h3>ANASAYFA</h3></div>
+        <div class="menu2" onclick="window.location.href='#'"> <h3>YAZILIM</h3></div>
+        <div class="menu2" onclick="window.location.href='#'"> <h3>KARİYER GELİŞİM</h3></div>
+        <div class="menu2" onclick="window.location.href='kişisel_gelişim.html'"> <h3>KİŞİSEL GELİŞİM</h3></div>
+            
+
+    <div class="login-links">
+        <div class="login-box kaydol" onclick="window.location.href='kaydol.html'">Kaydol</div>
+        <div class="login-box giris-yap" onclick="window.location.href='muhammed_kayıt.html'">Giriş Yap</div>
+    </div>
+    <button onclick="temaDegistir()">Gece Modu</button>
+</nav>
+
+<h1 id="kişisel_gelişim_text"><div>DİLLER</div></h1>
+<div class="category-box">
+    
+    <div class="İNGİLİZCE" onclick="window.location.href='english.html'"></div>
+    <div class="ALMANCA" onclick="window.location.href='1diller.html'"></div> 
+    <div class="FRANSIZCA" onclick="window.location.href='1diller.html'"></div>
+
+<div class="category-box">
+    
+        <div class="İTALYANCA" onclick="window.location.href='1diller.html'"></div>
+        <div class="RUSÇA" onclick="window.location.href='1diller.html'"></div> 
+        <div class="ARAPÇA" onclick="window.location.href='1diller.html'"></div>
+</div>
+
+
+
+<button onclick="topFunction()" id="topBtn" title="Sayfanın başına git">Başa Dön</button>
+
+<script>
+// Kullanıcı sayfada belirli bir miktar kaydırdığında butonu göster
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topBtn").style.display = "block";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+
+// Kullanıcı butona tıkladığında sayfanın en üstüne çık
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
